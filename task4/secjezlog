@@ -1,0 +1,20 @@
+#!/bin/bash
+START_DATE="2020-01-01"
+END_DATE="2025-12-31"
+
+START_EPOCH=$(date --utc --date="$START_DATE" +%s)
+END_EPOCH=$(date --utc --date="$END_DATE" +%s)
+
+EPOCH_DIFF=$((END_EPOCH - START_EPOCH))
+while true;do
+	# Generate a random number of seconds within the range
+	RAND_SECONDS=$(shuf -n 1 -i 0-$EPOCH_DIFF)
+
+	# Add the random seconds to the start epoch time
+	RAND_EPOCH=$((START_EPOCH + RAND_SECONDS))
+
+	RAND_DATE=$(date --utc --date="@$RAND_EPOCH" +"%Y-%m-%d %H:%M:%S")
+	echo "$RAND_DATE -- [Info] Execution Started" >> secjez.log
+	echo "$RAND_DATE -- [Success] Successfully Executed" >> secjez.log
+	echo "$RAND_DATE -- [Info] Execution Finished" >> secjez.log
+done

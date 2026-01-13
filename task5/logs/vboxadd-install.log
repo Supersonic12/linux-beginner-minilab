@@ -1,0 +1,11 @@
+
+VirtualBox Guest Additions: Starting.
+VirtualBox Guest Additions: Setting up modules
+VirtualBox Guest Additions: Building the VirtualBox Guest Additions kernel 
+modules.  This may take a while.
+VirtualBox Guest Additions: To build modules for other installed kernels, run
+VirtualBox Guest Additions:   /sbin/rcvboxadd quicksetup <version>
+VirtualBox Guest Additions: or
+VirtualBox Guest Additions:   /sbin/rcvboxadd quicksetup all
+VirtualBox Guest Additions: Building the modules for kernel 6.17.10+kali-amd64.
+update-initramfs: Generating /boot/initrd.img-6.17.10+kali-amd64

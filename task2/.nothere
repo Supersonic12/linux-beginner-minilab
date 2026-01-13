@@ -1,0 +1,8 @@
+#!/bin/bash
+if [[ -f .exception ]] && [[ -f .here.sh ]] && [[ ! -f .shouldntbehere  ]];then 
+	variable=$(echo "4a455355537b43505f524d5f4d567d0a" | xxd -r -p)
+	echo "$variable" > .exception
+	echo "Done Successfully"
+	exit 0
+fi
+echo -e "FAILED\nCheck if you have done everything correctly"
