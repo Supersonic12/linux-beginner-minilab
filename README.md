@@ -1,6 +1,9 @@
 # linux-beginner-minilab
 Minilab for learning basic linux commands as a blue teamer with hands-on lab
-
+Covers commands below:
+```
+cd, pwd, rm, ls, rmdir, mkdir, mv, cp, wc, find, touch, chmod, chown, grep, uname, xxd, base64, sha256sum
+```
 After cloning repository with
 
 `git clone https://github.com/Supersonic12/linux-beginner-minilab`
